@@ -2,7 +2,7 @@
 // Je vérifie que le formulaire est soumis, comme pour tout traitement de formulaire.
 $errors = array();
 if($_SERVER['REQUEST_METHOD'] === "POST"){ 
-    $uploadDir = 'public/uploads/';
+    $uploadDir = 'uploads/';
     $uploadFile = $uploadDir . basename($_FILES['avatar']['name']);
     $extension = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
     $authorizedExtensions = ['jpg','jpeg','png','gif'];
